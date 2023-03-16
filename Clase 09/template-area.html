@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Area ATR</title>
+    <style>
+        .contenedor {
+            display: grid;
+            grid-template-areas: 
+            'header header header header'
+            'contenido contenido contenido sidebar'
+            'box1 box2 box3 box4'
+            'footer footer footer footer';
+            grid-gap: 1rem;
+        }
+        .header,
+        .contenido,
+        .sidebar,
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .footer {
+            border: 1px #ccc solid;
+        }
+
+        /*MAPEO*/
+        .header {
+            grid-area: header;
+        }
+        .contenido {
+            grid-area: contenido;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .box1 {
+            grid-area: box1;
+        }
+        .box2 {
+            grid-area: box2;
+        }
+        .box3 {
+            grid-area: box3;
+        }
+        .box4 {
+            grid-area: box4;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        
+        @media (max-width: 500px) {
+            .contenedor {           
+            grid-template-areas: 
+            'header'
+            'contenido' 
+            'sidebar'
+            'box1'
+            'box2'
+            'box3'
+            'box4'
+            'footer';           
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <h1>Hola soy un Header</h1>
+        </header>
+        <section class="contenido">
+            <h3>Hola Nucbers!!!</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam similique quos excepturi. Eligendi, quam illo autem vero deleniti ipsam ratione, doloremque sunt, laborum officia ut maiores adipisci quidem. Non, quam.</p>
+        </section>
+        <aside class="sidebar">
+            <h3>Chau Nucbers!!</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </aside>
+        <div class="box1">
+            <h3>Box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eaque repellendus facere explicabo, quidem ad maiores nisi ipsum, nam harum porro reiciendis quod facilis, doloremque quae tempora distinctio recusandae debitis!</p>
+        </div>
+        <div class="box2">
+            <h3>Box 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eaque repellendus facere explicabo, quidem ad maiores nisi ipsum, nam harum porro reiciendis quod facilis, doloremque quae tempora distinctio recusandae debitis!</p>
+        </div>
+        <div class="box3">
+            <h3>Box 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eaque repellendus facere explicabo, quidem ad maiores nisi ipsum, nam harum porro reiciendis quod facilis, doloremque quae tempora distinctio recusandae debitis!</p>
+        </div>
+        <div class="box4">
+            <h3>Box 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eaque repellendus facere explicabo, quidem ad maiores nisi ipsum, nam harum porro reiciendis quod facilis, doloremque quae tempora distinctio recusandae debitis!</p>
+        </div>
+        <footer class="footer">
+            <p>Copyright &copy; NUCBA 2022</p>
+        </footer>
+    </div>    
+</body>
+</html>

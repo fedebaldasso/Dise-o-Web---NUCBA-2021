@@ -1,0 +1,36 @@
+body {
+    background: rgb(52,131,193);
+    background: linear-gradient(90deg, rgba(52,131,193,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 1rem;
+}
+
+/*Elijo el primer item y hago que ocupe 3 columnas*/
+.item:first-child {
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    grid-column: 1 / span 4; /*con esta linea hago lo mismo que con las 2 anteriores. Ocupo 3 columnas.*/
+}
+
+/*Elijo el item 4 y hago que ocupe muchas filas*/
+
+.item:nth-child(4) {
+    grid-row: 2 / span 25;
+}
+
+.item {
+    
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 8px;
+    flex-direction:column;
+    /* -webkit-box-shadow:;
+    -moz-box-shadow: ; */
+    justify-content: center;
+    align-items: center;
+
+}

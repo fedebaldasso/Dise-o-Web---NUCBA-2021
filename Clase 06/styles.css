@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {    
+
+font-family: 'Poppins', sans-serif;
+margin: 0;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,73,26,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+a {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: rgb(0, 0, 0, 0.2);
+    padding: 20px 5px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+a:hover {
+    background: rgb(0, 0, 0, 0.3);
+}
+
+.toggle {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion li {
+    flex: 3;
+}
+
+.navegacion .social {
+    flex: 1;
+}
+
+input {
+    padding: 10px;
+    border: 0;
+}
+
+section,
+footer {
+    text-align: center;
+    background: rgb(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    font-weight: 100;
+}
+
+.items {
+    margin-top: 20px;
+    background: rgb(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.item {
+    flex: 1 0 25%; /*ocupa todo el contenedor, que no se achique mas del contenedor, ocupa el 25% del ancho disponible*/
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center ;
+    padding: 5px;
+}
+
+/*MEDIA QUERIES*/
+
+/*COMPORTAMIENTO PARA ANCHO MENOR A 1000PX*/
+
+@media all and (max-width: 1000px) {
+    .navegacion ul {
+        flex-wrap: wrap;
+    }
+
+    .navegacion li {
+        flex: 1 1 50%;
+    }
+
+    .items {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 50%; /*LAS IMAGENES OCUPAN EL 50% DEL ANCHO*/
+        margin: 10 30px;
+    }
+}
+
+/*COMPORTAMIENTO PARA ANCHO MENOR A 500PX*/
+
+@media all and (max-width: 500px) {
+    .navegacion ul {
+        flex-wrap: wrap;
+    }
+
+    .navegacion li {
+        flex: 1 1 50%;
+    }
+
+    .items {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 100%; /*CADA IMAGEN OCUPA EL 100% DEL ANCHO*/
+        margin: 10 30px;
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .signup input {
+        margin: 5px;
+    }
+}

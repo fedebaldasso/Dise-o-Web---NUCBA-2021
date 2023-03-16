@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comforter', cursive;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both; /*evita que se solapen los elementos*/
+}
+
+.box {
+    background: #35858B;
+    border: 1px solid #333 ;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.box p {
+    text-align: center;
+}
+
+#box-2 {
+    float: left;
+    width: 68%;
+}
+
+#box-3 {
+    float: right;
+    width: 30%;
+}

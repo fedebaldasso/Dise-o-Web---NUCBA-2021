@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+body {
+    font-family: 'Comforter', cursive;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: peru;
+    border-bottom: 1px solid peru;
+}
+
+.btn {
+    background: #4FBDBA;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #023836;
+}
+
+.btn.btn-todo-mal {
+    background: red;
+    border-radius: 50%;
+
+}

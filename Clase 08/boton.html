@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contenedor__btn {
+            border: none;
+            width: 100px;
+            height: 50px;
+            background: blue;
+            color: white;
+        }
+
+        /*Creamos un modificador que solo modifica el color del boton pero copia el resto de las caracterisiticas. El -- se usa para indicar que es un modificador*/
+
+        .contenedor__btn--green {
+            background: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <span class="contenedor__mispan"></span>
+        <button class="contenedor__btn">HOLA SOY UN BOTON</button>
+        <button class="contenedor__btn contenedor__btn--green">HOLA SOY UN BOTON</button>
+    </div>
+    
+</body>
+</html>
